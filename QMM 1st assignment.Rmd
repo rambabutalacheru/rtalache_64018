@@ -1,0 +1,26 @@
+---
+title: "QMM 1st Assignment"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+# Importing Dataset
+```{r}
+library(readxl)
+drinks <- read_excel("C:/Users/ramne/Desktop/drinks.xlsx")
+View(drinks)
+
+```
+
+# Summary of datset
+
+```{r}
+
+summary(drinks)
+
+# Visualizing the data
+
+barplot(drinks$total_litres_of_pure_alcohol)
+```
+
